@@ -1,0 +1,42 @@
+/* var ai;
+var audio;
+document.querySelector('.content').appendChild(audio = new Audio('music/bg_music.mp3'));
+
+document.addEventListener("visibilitychange", function() { 
+  audio.volume = 0.05    
+  if (document.hidden) { 
+    console.log("BG")
+    audio.pause();
+  } else { 
+    console.log("FG")
+    audio.play();
+  } 
+}); */
+
+
+/* function PageSoundPlay()
+{
+    var nowTime = new Date().getTime();
+    document.querySelector('.content').appendChild(audio = new Audio('music/bg_music.mp3'));
+    localStorage['PageSound'] = nowTime;
+
+    audio.play();
+}
+function PageSoundStop()
+{
+    PageSound.pause();
+    PageSound.currentTime = 0;
+}
+function onStorageEvent(storageEvent){
+    if(storageEvent.key == 'PageSound')
+        PageSoundStop();
+}
+$(document).ready(function()
+{
+    if (window.addEventListener) {
+        window.addEventListener("storage", onStorageEvent, false);
+    } else {
+        window.attachEvent("onstorage", onStorageEvent);
+    };
+   PageSoundPlay();
+}); */
